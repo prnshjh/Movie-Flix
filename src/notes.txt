@@ -1,0 +1,2 @@
+//components are independent and reusable bits of code they serve the same purpose as JS function but work in isolation and return HTML
+rafce to boiler plate code
