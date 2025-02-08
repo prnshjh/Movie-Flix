@@ -1,7 +1,3 @@
-//components are independent and reusable bits of code they serve the same purpose as JS function but work in isolation and return HTML
-rafce to boiler plate code
-
-//sample-map
 import React from 'react'
 
 const Prodinfo = () => {
@@ -24,8 +20,8 @@ const Prodinfo = () => {
     ]
   return (
     <div>
-        {prod.map((p)=>(
-            <div key={p.id}>
+        {prod.map((prod)=>(
+            <div key={prod.id}>
          <h1>Name: {prod.name}</h1>
          <h1>Price: {prod.price}</h1>
          
