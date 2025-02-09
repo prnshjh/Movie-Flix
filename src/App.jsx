@@ -1,14 +1,13 @@
-const ValidPassword=()=><h1>Valid Password</h1>;
-const InvalidPassword=()=><h2>Invalid passowrd</h2>;
+import React from 'react'
+import Weather from './Components/Weather'
 
-const Password=({isValid})=>{
-  return isValid? <ValidPassword/>:<InvalidPassword/>
-};
 
 const App = () => {
   return (
     <div>
-      <Password isValid={false}/>
+      <h1>
+        <Weather temperature={26}/>
+      </h1>
     </div>
   )
 }

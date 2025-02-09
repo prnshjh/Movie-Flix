@@ -175,3 +175,32 @@ const App = () => {
 }
 
 export default App
+
+//sample cart 
+import React from 'react'
+
+const Cart=()=>{
+const items=[
+  "Phone", "Earbuds", "HeadPhones", "Keyboard"
+]
+return <div>
+ <h1>
+ Cart🛒:
+ </h1>
+ {items.length>0 && <h2>You have {items.length} items in your cart</h2> }
+ <h2>Products</h2>
+ {items.map(item=>(
+  <li key ={Math.random()}>{item}</li>
+ ))}
+</div>
+};
+
+const App = () => {
+  return (
+    <div>
+      <Cart/>
+    </div>
+  )
+}
+
+export default App
