@@ -1,13 +1,14 @@
-import React from 'react';
-import Weather from './Components/Weather';
+import React from 'react'
+import './index.css'
 
 const App = () => {
   return (
     <div>
-      <h1>Weather Forecast</h1>
-      <Weather temperature={22}/>
+      <h1>
+         Inline Style
+      </h1>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

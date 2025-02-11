@@ -1,17 +1,14 @@
-import React from 'react';
+import React from 'react'
 
-const Weather = ({ temperature }) => {
-    return (
-        <div>
-            {temperature < 15 ? (
-                <h1>It's Cool Outside</h1>
-            ) : temperature >= 15 && temperature < 25 ? (
-                <h1>It's Nice Outside</h1>
-            ) : (
-                <h1>It's Hot Outside</h1>
-            )}
-        </div>
-    );
-};
+const Weather = ({temperature}) => {
+  return (
+    <div>
+        <h1>
+            {temperature}
+        </h1>
 
-export default Weather;
+    </div>
+  )
+}
+
+export default Weather

@@ -204,3 +204,33 @@ const App = () => {
 }
 
 export default App
+
+//sample inline css
+import React from 'react'
+
+const App = () => {
+  return (
+    <div>
+      <h1 style={{color: "white", backgroundColor:"teal", padding:"2rem"}}>
+         Inline Style
+      </h1>
+    </div>
+  )
+}
+
+export default App
+
+//sample using css as object
+import React from 'react'
+const styles={color: "white", backgroundColor:"teal", padding:"2rem"}
+const App = () => {
+  return (
+    <div>
+      <h1 style={styles}>
+         Inline Style
+      </h1>
+    </div>
+  )
+}
+
+export default App
