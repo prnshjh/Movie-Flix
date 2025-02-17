@@ -1,3 +1,8 @@
-components are independent and reusable bits of code they serve the same purpose as JS function but work in isolation and return HTML
-rafce to boiler plate code
-conditional re rendering allows us to dynammically display diffetrent UI components or content based on specific conditions This enables us to create more interactive and responsive user experiences
+components: are independent and reusable bits of code they serve the same purpose as JS function but work in isolation and return HTML
+rafce: to boiler plate code
+conditional re rendering: allows us to dynammically display diffetrent UI components or content based on specific conditions This enables us to create more interactive and responsive user experiences
+State: State is way to store and manage data that can change over time and affects how the component rendersw. we define state using the useState Hook, which allows you to set an initial value and provides a way to update that state
+Hook: Hooks are new addition in React 16.8 They let you use state and other React features without writting a class 
+useState(): usestate Hook allows us yo track state in a functional component State generally refers to data or properties that need to be tracking in an application , example =>  import {useState} from 'react';const [data(initial value), changeData(change value)]=useState(0);
+
+//
