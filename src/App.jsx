@@ -1,31 +1,15 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
+import ComponentOne from './Components/ComponentOne';
+import ComponentTwo from './Components/ComponentTwo';
 
 const App = () => {
-  const [movies, setMovies] = useState([
-    { id: 1, title: "Spiderman", Ratings: 3 },
-    { id: 2, title: "Superman", Ratings: 5 },
-    { id: 3, title: "Batman", Ratings: 7 },
-    { id: 4, title: "Ironman", Ratings: 8.4 },
-  ]);
-
-  const handleClick = () => {
-    setMovies(
-      movies.map((m) =>
-        m.id === 1 ? { ...m, title: "John Wick 5", Ratings: 6 } : m
-      )
-    );
-  };
-
+    const [count, setCount]=useState(0);
   return (
     <div>
-      <ul>
-        {movies.map((m) => (
-          <li key={m.id}>{m.title}</li>
-        ))}
-      </ul>
-      <button onClick={handleClick}>Change Title</button>
+        <ComponentOne count={count} onClickHandler={()=>setCount(count+1)}></ComponentOne>
+        <ComponentTwo count={count} onClickHandler={()=>setCount(count+1)}></ComponentTwo>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
