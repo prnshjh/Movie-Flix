@@ -1,0 +1,56 @@
+1.useState
+
+import React, { useState } from 'react'
+
+const Counter = () => {
+    const [Count, setCount]=useState(0);
+   
+  return (
+    <div>
+      <h1>
+        Counter: {Count}
+
+      </h1>
+      <button onClick={()=>setCount(Count + 1)}>Increment</button>
+      
+      </div>
+  )
+}
+
+export default Counter
+
+2. todolist
+import React, { useState } from 'react'
+
+const TodoList = () => {
+
+    const [todos, setTodos] = useState([]);
+    const [input, setInput] = useState("");
+    const handleSubmit=(e)=>{
+        e.preventDefault();
+        setTodos([...todos, input]);
+        setInput("");
+    };
+
+  return (
+    <div>
+        <h1>Todo List</h1>
+         <form onSubmit={handleSubmit}>
+            <input type='text'
+            value={input}
+            onChange={(e)=>setInput(e.target.value)}
+            placeholder="Enter a task..."
+            ></input>
+            <button type='submit'>Add</button>
+         </form>
+
+         <ul>
+                {todos.map((todo, index) => (
+                    <li key={index}>{todo}</li>
+                ))}
+            </ul>
+    </div>
+  )
+}
+
+export default TodoList

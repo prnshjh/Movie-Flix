@@ -1,13 +1,12 @@
-import React, { useState } from 'react'
-import ComponentOne from './Components/ComponentOne';
-import ComponentTwo from './Components/ComponentTwo';
+import React from 'react'
+import ComponentOne from './Components/ComponentOne'
+import Counter from './Components/Counter'
+import TodoList from './Components/TodoList'
 
 const App = () => {
-    const [count, setCount]=useState(0);
   return (
     <div>
-        <ComponentOne count={count} onClickHandler={()=>setCount(count+1)}></ComponentOne>
-        <ComponentTwo count={count} onClickHandler={()=>setCount(count+1)}></ComponentTwo>
+     <TodoList/>
     </div>
   )
 }

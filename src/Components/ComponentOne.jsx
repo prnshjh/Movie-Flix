@@ -1,14 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const ComponentOne = ({count, onClickHandler}) => {
+const ComponentOne = () => {
+  const [randomNumber, setRandomNumber]=useState(()=>
+    Math.floor(Math.random()*100));
 
-  const handleClick=()=>onClickHandler();
 
-  
   return (
     <div>
-      <p>{count}</p>
-      <button onClick={handleClick}>Increment</button>
+      <h1>Random Number: {randomNumber} </h1>
     </div>
   )
 }
